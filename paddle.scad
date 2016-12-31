@@ -2,7 +2,7 @@
 handle_length = 100;
 
 // The handle style.
-handle_style = "straight"; // [straight, flared, anatomic, rounded, square, flat, donic, conic]
+handle_style = "straight"; // [straight, flared, anatomic, rounded, flat, donic, conic]
 
 // The thickness of the handle, top to bottom when the blade is facing up/down.
 handle_thickness = 25;
