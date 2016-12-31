@@ -48,9 +48,17 @@ module paddle(handle_length=100, handle_style="straight", handle_thickness=25, h
             square([blade_width, blade_length], true);
         }
         else if ( "oblong" == blade_shape ) {
-            hull() {
-                translate([0, -(blade_width / 2) + (blade_length / 2), 0]) circle(r=blade_width / 2);
-                translate([0, (blade_width / 2) - (blade_length / 2), 0]) circle(r=blade_width / 2);
+            if ( blade_length > blade_width ) {
+                hull() {
+                    translate([0, -(blade_width / 2) + (blade_length / 2), 0]) circle(r=blade_width / 2);
+                    translate([0, (blade_width / 2) - (blade_length / 2), 0]) circle(r=blade_width / 2);
+                }
+            }
+            else {
+                hull() {
+                    translate([-(blade_length / 2) + (blade_width / 2), 0, 0]) circle(r=blade_length / 2);
+                    translate([(blade_length / 2) - (blade_width / 2), 0, 0]) circle(r=blade_length / 2);
+                }
             }
         }
     }
