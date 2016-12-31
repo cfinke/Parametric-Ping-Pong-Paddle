@@ -2,7 +2,7 @@ Parametric Ping Pong Paddle
 ===========================
 A parametric ping pong paddle (or table tennis racket) with support for many different handle styles and blade shapes.
 
-[paddle.stl](The example STL) was generated with the following options:
+[The example STL](paddle.stl) was generated with the following options:
 
 ```
 handle_length = 100;
