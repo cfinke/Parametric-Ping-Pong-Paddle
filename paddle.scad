@@ -23,7 +23,7 @@ blade_length = 160;
 blade_thickness = 6;
 
 // The blade shape.
-blade_shape = "pear"; // [oval, pear, square, oblong]
+blade_shape = "oblong"; // [oval, pear, square, oblong]
 
 $fs = 1;
 $fa = 1;
@@ -46,6 +46,12 @@ module paddle(handle_length=100, handle_style="straight", handle_thickness=25, h
         }
         else if ( "square" == blade_shape ) {
             square([blade_width, blade_length], true);
+        }
+        else if ( "oblong" == blade_shape ) {
+            hull() {
+                translate([0, -(blade_width / 2) + (blade_length / 2), 0]) circle(r=blade_width / 2);
+                translate([0, (blade_width / 2) - (blade_length / 2), 0]) circle(r=blade_width / 2);
+            }
         }
     }
     
