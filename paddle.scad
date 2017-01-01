@@ -2,7 +2,7 @@
 handle_length = 100;
 
 // The handle style.
-handle_style = "flared"; // [straight, conic, flared, anatomic, rounded, flat, donic]
+handle_style = "flared"; // [straight, conic, flared]
 
 // The thickness of the handle at its thickest point, top to bottom when the blade is facing up/down.
 handle_thickness = 30;
@@ -11,7 +11,7 @@ handle_thickness = 30;
 handle_width = 45;
 
 // The distance the handle should be offset from the usual position where it meets the blade. A higher number makes the handle effectively shorter.
-handle_offset = 0;
+handle_offset = 10;
 
 // The width of the blade at its widest point.
 blade_width = 150;
