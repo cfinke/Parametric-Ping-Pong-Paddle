@@ -6,13 +6,14 @@ A parametric ping pong paddle (or table tennis racket) with support for many dif
 
 ```
 handle_length = 100;
-handle_style = "straight";
-handle_thickness = 25;
-handle_width = 35;
+handle_style = "flared";
+handle_thickness = 30;
+handle_width = 45;
 handle_offset = 0;
 
 blade_width = 150;
 blade_length = 160;
 blade_thickness = 6;
-blade_shape = "pear";
+blade_shape = "oblong";
+blade_texture = "smooth";
 ```

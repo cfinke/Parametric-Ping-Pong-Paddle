@@ -1,5 +1,3 @@
-use <rzweije-shapes.scad>;
-
 // The length of the handle from where it meets the surface of the blade.
 handle_length = 100;
 
@@ -31,8 +29,8 @@ blade_shape = "oblong"; // [oval, pear, square, oblong]
 blade_texture = "smooth"; // [smooth, pimpled, perforated]
 
 /* [Hidden] */
-//$fs = 1;
-//$fa = 1;
+$fs = 1;
+$fa = 1;
 
 module paddle(handle_length=100, handle_style="straight", handle_thickness=25, handle_width=35, handle_offset=0, blade_width=150, blade_length=160, blade_thickness=6, blade_shape="pear", blade_texture="smooth") {
 
